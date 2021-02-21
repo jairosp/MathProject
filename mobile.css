@@ -14,7 +14,7 @@ html{
     font-size: 62.5%;
 }
 header{
-    width: 100%;
+    width: 100vw;
     height: 100px;
     background: var(--soft-red);
     display: flex;
