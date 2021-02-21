@@ -1,0 +1,78 @@
+:root{
+    --soft-black: #2B2D42;
+    --gray: #8D99AE;
+    --soft-white: #EDF2F4;
+    --soft-red: #EF233C;
+    --hard-red: #D90429;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: var(--soft-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: var(--soft-white);
+}
+.main{
+    background-color: var(--soft-white);
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.main .main__first-title{
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 500;
+    color: black;
+    padding: 0 25px;
+    padding-top: 30px;
+}
+.main .main__second-title{
+    font-size: 2.4rem;
+    line-height: 3rem;
+    font-weight: 800;
+    color: red;
+    padding: 0 25px;
+}
+.main .info {
+    padding: 0 25px;
+    padding-top: 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+.main .button {
+    width: 165px;
+    height: 53px;
+    margin-top: 30px;
+    padding: 15px;
+    align-self: center;
+
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--soft-red);
+    color: var(--soft-white);
+
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    font-weight: 700;
+}
