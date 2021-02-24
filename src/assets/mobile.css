@@ -28,6 +28,10 @@ header{
     line-height: 3rem;
     color: var(--soft-white);
 }
+.nav-bar{
+    display: none;
+}
+
 .main{
     background-color: var(--soft-white);
     font-family: 'Lato', sans-serif;
@@ -76,3 +80,8 @@ header{
     line-height: 2.3rem;
     font-weight: 700;
 }
+.main .button:hover{
+    box-shadow: 1px 1px 3px black;;
+}
+
+/* @media screen and (max-width:600px) */
