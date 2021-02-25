@@ -1,0 +1,7 @@
+.main .container{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main .container .problem:nth-of-type(3){
+    margin-top: 20px;
+}

@@ -31,44 +31,54 @@ header{
 .nav-bar{
     display: none;
 }
+
 .main{
-    height: 80vh;
     background-color: var(--soft-white);
+
 }
-.presentation{
-    font-family: 'Lato', sans-serif;
+.main .container{
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+}
+.main .container .problem {
+    height: auto;
+    width: 75vw;
+    min-width: 270px;
+    max-width: 400px;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: var(--gray);
+    justify-self: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
 }
-.main .main-presentation__first-title{
-    font-size: 2.4rem;
-    line-height: 3rem;
-    font-weight: 500;
-    color: black;
-    padding: 0 25px;
-    padding-top: 30px;
+.main .container .problem:hover {
+    outline: 2px #0791e6 solid;
 }
-.main .main-presentation__second-title{
-    font-size: 2.4rem;
-    line-height: 3rem;
-    font-weight: 800;
-    color: red;
-    padding: 0 25px;
+.main .container .problem:nth-of-type(1){
+    margin-top: 20px;
 }
-.main .presentation-info {
-    padding: 0 25px;
-    padding-top: 20px;
-    font-weight: 400;
-    font-size: 1.6rem;
+.main .container .problem p {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--soft-black);
+}
+.main .container .problem h2{
+    font-size: 1.8rem;
     line-height: 2rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--soft-white);
+    text-align: center;
 }
-.main .button {
+.main .container .problem button {
     width: 165px;
     height: 53px;
     margin-top: 30px;
-    margin-bottom: 50px;
     padding: 15px;
     align-self: center;
 
@@ -83,7 +93,7 @@ header{
     line-height: 2.3rem;
     font-weight: 700;
 }
-.main .button:hover{
+.main .container .problem button:hover{
     box-shadow: 1px 1px 3px black;
 }
 .footer{
@@ -111,4 +121,3 @@ header{
 .footer__list li a:hover{
     text-decoration: underline;
 }
-/* @media screen and (max-width:600px) */
